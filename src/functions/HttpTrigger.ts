@@ -13,7 +13,7 @@ const DurableOrchestratorTestHttpStart: HttpHandler = async (request: HttpReques
 };
 
 app.http('DurableOrchestratorTestHttpStart', {
-    route: 'orchestrators1/{orchestratorName}',
+    route: 'orchestrators/{orchestratorName}',
     extraInputs: [df.input.durableClient()],
     handler: DurableOrchestratorTestHttpStart,
 });
