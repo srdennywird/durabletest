@@ -41,4 +41,4 @@ jobs:
           app-name: 'OrchestratorDeployment'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A050974DBF0846DAA7A81BE4C8AFBA5F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2A70C6F1DC7E4F78B8CAD75037EAF9D0 }}
