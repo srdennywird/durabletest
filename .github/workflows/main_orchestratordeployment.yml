@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js project to Azure Function App - orchestratordeployment
+name: Build and deploy Node.js project to Azure Function App - OrchestratorDeployment
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'orchestratordeployment'
-          slot-name: 'staging'
+          app-name: 'OrchestratorDeployment'
+          slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_440416EA84A24DC49F69A3ABCEEF187F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8D62ECD58D704515BDC258518AAB30E7 }}
