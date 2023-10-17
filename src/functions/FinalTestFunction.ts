@@ -12,5 +12,9 @@ const DurableOrchestratorTestOrchestrator: OrchestrationHandler = function* (con
 
     return outputs;
 };
+df.app.orchestration('FinalTest', DurableOrchestratorTestOrchestrator);
 
-df.app.orchestration('Orquestador3', DurableOrchestratorTestOrchestrator);
+const DurableOrchestratorTest: ActivityHandler = (input: string): string => {
+    return `Hello, ${input}`;
+};
+df.app.activity(activityName, { handler: DurableOrchestratorTest });
