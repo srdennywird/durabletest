@@ -12,8 +12,8 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0-alpha.9",
-    "durable-functions": "^3.0.0-alpha.5"
+    "@azure/functions": "^4.0.1",
+    "durable-functions": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "18.x",
